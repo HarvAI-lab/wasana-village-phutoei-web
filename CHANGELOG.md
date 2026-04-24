@@ -20,6 +20,30 @@ Each future entry must include:
 
 ## 2026-04-24
 
+### Cleaned room gallery captions
+
+- Changed room gallery captions to remove numeric suffixes.
+- `VIP Room [number]` now displays as `VIP ROOM`.
+- `Standard Room [number]` now displays as `STANDARD ROOM`.
+- `VIP Extra Room [number]` now displays as `VIP EXTRA ROOM`.
+- Left `Resort View` labels unchanged.
+- Did not change image `src` values or implement the later VIP Room 2 image replacement.
+
+Files changed:
+
+- `index.html`
+- `CHANGELOG.md`
+- `TASKS.md`
+
+Verification result:
+
+- Only room gallery `alt` labels were changed in `index.html`.
+- No image sources, CSS, layout, gallery behavior, JavaScript functions, unrelated text, or unrelated images were changed.
+
+Rollback note:
+
+- Restore the previous room gallery `alt` labels from the prior commit if this caption cleanup needs to be reverted.
+
 ### Added project control files
 
 - Added `README.md`, `PROJECT_RULES.md`, `CHANGELOG.md`, and `TASKS.md`.
